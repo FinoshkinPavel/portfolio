@@ -1,0 +1,38 @@
+@import "../../scss/mixin";
+@import "../../scss/variables";
+
+.projectBlock{
+  width: 60%;
+  height: 60%;
+  @include flex(column, center, space-evenly);
+  color: $textColor2;
+
+
+  .title{
+    text-align: center;
+    font-weight: lighter;
+    @include adaptiv-font(34, 12);
+    letter-spacing: 15px;
+  }
+  .description{
+    text-align: center;
+    font-weight: lighter;
+    @include adaptiv-font(22, 12);
+
+  }
+  .demoBtn{
+    border:1px solid  $baseColor3;
+    box-sizing: border-box;
+    @include flex(column, center, center);
+
+
+    & a{
+      @include adaptiv-font(16, 12);
+      font-weight: lighter;
+      padding: 1em;
+      text-decoration: none;
+      color: inherit;
+
+    }
+  }
+}

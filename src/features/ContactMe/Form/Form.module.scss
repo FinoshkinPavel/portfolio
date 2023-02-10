@@ -1,0 +1,56 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixin';
+
+
+.formBlock {
+  width: 50%;
+  height: 100%;
+  @include flex(column, center, space-evenly);
+
+  @media (max-width: 1366px) {
+    width: 90%;
+  }
+
+  .inputBox {
+    width: 100%;
+    @include flex(row, center, space-evenly);
+    @media (max-width: 320px) {
+      flex-direction: column;
+      height: 30%;
+    }
+
+    .inputText {
+      width: 35%;
+      border: none;
+      border-bottom: $border;
+      background-color: $baseColor4;
+      outline: none;
+      @include text(lighter, 16px);
+      padding-bottom: 8px;
+
+      @media (max-width: 320px) {
+        width: 80%;
+      }
+    }
+  }
+
+  .message {
+    width: 80%;
+    resize: none;
+    background-color: $baseColor4;
+    outline: none;
+    @include text(lighter, 16px);
+  }
+
+  .btn {
+    padding: 1em;
+    color: $textColor1;
+    border: 0.2px solid #000;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    @include adaptiv-font(14, 12);
+    @include flex(column, center, center);
+    background-color: $baseColor4;
+    cursor: pointer;
+  }
+}
