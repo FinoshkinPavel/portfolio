@@ -1,0 +1,42 @@
+@import "./../../../scss/variables";
+.burger {
+  width: 20px;
+  height: 15px;
+  position: relative;
+  margin-right: 20px;
+  z-index: 1;
+
+  &:before,
+  &:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: $baseColor1;
+    transition: 0.2s linear;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 1px;
+  }
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.burgerActive:before{
+  transform: rotate(45deg) translateY(9px);
+  transition: 0.2s linear;
+  background-color: $baseColor1;
+}
+
+.burgerActive:after {
+  transform: rotate(-45deg) translateY(-10px);
+  transition: 0.2s linear;
+  background-color: $baseColor1;
+}

@@ -5,7 +5,6 @@ import {loadFull} from "tsparticles";
 
 export const _Particles = () => {
     const particlesInit = useCallback(async (engine: Engine) => {
-
         await loadFull(engine);
     }, []);
 
@@ -29,7 +28,7 @@ export const _Particles = () => {
                         speed: 2,
                         straight: false
                     },
-                    number: { density: { enable: true, area: 800 }, value: 80 },
+                    number: {density: {enable: true, area: 800}, value: 80},
                     opacity: {
                         value: 0.5
                     },
@@ -37,7 +36,7 @@ export const _Particles = () => {
                         type: "circle"
                     },
                     size: {
-                        value: { min: 1, max: 5 }
+                        value: {min: 1, max: 5}
                     }
                 },
                 themes: [

@@ -11,7 +11,7 @@ export const linkMenuData = [
 ]
 
 export const linkSocialIcon = [
-    {icon: vk, path: '1'},
-    {icon: insta, path: '2'},
-    {icon: telega, path: '3'},
+    {icon: vk, path: 'https://vk.com/id162155864'},
+    {icon: insta, path: 'https://instagram.com/fin_pavel?igshid=YmJhNjkzNzY='},
+    {icon: telega, path: 'https://sun9-5.userapi.com/impg/MfQCbNtUK1KoJuHCr-dcBW2WJkp6sA4VplWPhw/WgjV3UnYYNY.jpg?size=1080x2073&quality=95&sign=f1276abe0d926ba22fd18e67c4ed6f94&type=album'},
 ]

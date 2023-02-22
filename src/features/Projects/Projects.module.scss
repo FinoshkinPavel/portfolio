@@ -1,0 +1,60 @@
+@import "../../scss/mixin";
+@import "../../scss/variables";
+
+.cont {
+  width: 100%;
+  height: 100%;
+
+  .projectsWrap {
+    width: 100%;
+    height: 90%;
+
+    .slide {
+      width: 100%;
+      height: 90%;
+      @include flex(column, center, center);
+
+
+      .project {
+        width: 100%;
+        height: 90%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include flex(column, center, center);
+
+        .backgroundHover{
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.4);
+          @include flex(column, center, center);
+        }
+      }
+
+      .sliderBtnBlock {
+        width: 100%;
+        margin-top: 15px;
+        @include flex(row, center, space-evenly);
+
+        .sliderBtn {
+          width: 120px;
+          height: 50px;
+          color: $textColor1;
+          border: 0.2px solid #000;
+          letter-spacing: 5px;
+          @include text(lighter, 12px);
+          @include flex(column, center, center);
+          background-color: $baseColor4;
+          cursor: pointer;
+          
+          @media (max-width: 376px) {
+          height: 35px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+

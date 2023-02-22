@@ -1,0 +1,29 @@
+@import "../../scss/mixin";
+@import "../../scss/variables";
+
+.snackBar{
+  width: 300px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: $baseColor4;
+  position: absolute;
+  top: -100%;
+  left: 10%;
+  transition: 1s ease ;
+  z-index: 5;
+  @include flex(row, center, center);
+
+  @media (max-width: 768px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .text{
+    line-height: 100px;
+    @include text(lighter, 18px)
+  }
+}
+
+.snackBarActive{
+  top: 0.5%;
+  transition: 1s ease ;
+}

@@ -25,7 +25,7 @@
       border-bottom: $border;
       background-color: $baseColor4;
       outline: none;
-      @include text(lighter, 16px);
+      @include adaptiv-font(18, 12);
       padding-bottom: 8px;
 
       @media (max-width: 320px) {
@@ -39,7 +39,8 @@
     resize: none;
     background-color: $baseColor4;
     outline: none;
-    @include text(lighter, 16px);
+    @include adaptiv-font(18, 12);
+
   }
 
   .btn {

@@ -8,7 +8,7 @@ export const dataProjects = [
         title: 'TodoList',
         img: todoList,
         description: 'TS, Redux Toolkit, RestAPI, Thunk,Material UI',
-        hrefDemo: ''
+        hrefDemo: 'https://finoshkinpavel.github.io/todo-list/'
     },
     {
         title: 'Counter',
@@ -20,12 +20,12 @@ export const dataProjects = [
         title: 'Social Network',
         img: socialImg,
         description: 'This is my first App with class components TS, Redux, Rest API, Thunk,',
-        hrefDemo: ''
+        hrefDemo: 'https://github.com/FinoshkinPavel/SamuraiWay'
     },
     {
         title: 'Study point',
         img: learnImg,
         description: 'App for learning some cards',
-        hrefDemo: ''
+        hrefDemo: 'https://finoshkinpavel.github.io/friday/'
     },
 ]

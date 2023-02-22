@@ -1,0 +1,16 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixin";
+
+.logo {
+  margin-left: 20px;
+  color: $baseColor2;
+  @include flex(column, center, center);
+  font-weight: lighter;
+  @include adaptiv-font(22, 16);
+
+  .stick{
+    width: 80%;
+    height: 1px;
+    background-color: $baseColor2;
+  }
+}

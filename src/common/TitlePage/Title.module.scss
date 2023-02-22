@@ -1,0 +1,31 @@
+@import "../../scss/variables";
+@import "../../scss/mixin";
+
+.titleWrap {
+  @include flex(row, center, space-evenly);
+  width: 98%;
+  height: 10%;
+
+  .title {
+    letter-spacing: 25px;
+    font-weight: lighter;
+    @include adaptiv-font(24, 18);
+
+    @media (max-width: 1370px) {
+      padding-left: 25px;
+    }
+    @media (max-width: 369px) {
+      letter-spacing: 18px;
+    }
+  }
+
+  .stick {
+    width: 60%;
+    height: 1px;
+    background-color: $baseColor1;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}

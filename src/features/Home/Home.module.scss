@@ -1,0 +1,47 @@
+@import "../../scss/mixin";
+@import "../../scss/variables";
+
+.cont {
+  width: 100%;
+  height: 100%;
+  @include flex(column, center, center);
+
+  .greetingText {
+    @include adaptiv-font(55, 25);
+  }
+
+  .text_Iam {
+    @include adaptiv-font(42, 18);
+  }
+
+  .stick {
+    width: 10%;
+    height: 2px;
+    background: $baseColor1;
+  }
+
+  .text {
+    @include adaptiv-font(22, 18);
+    font-weight: lighter;
+  }
+
+  .btn {
+    border: 0.2px solid #000;
+    letter-spacing: 5px;
+    @include adaptiv-font(12, 12);
+    background-color: $baseColor4;
+    cursor: pointer;
+    transform: translateY(20px);
+
+    & a{
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+      color: $textColor1;
+    }
+  }
+}
+
+
+
+

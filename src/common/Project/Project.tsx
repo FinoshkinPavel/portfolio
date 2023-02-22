@@ -15,7 +15,7 @@ export const Project: React.FC<ProjectPropsType> = memo(({title, description, hr
                 <div className={s.projectBlock}>
                     <span className={s.title}>{title.toUpperCase()}</span>
                     <span className={s.description}>{description}</span>
-                    <div className={s.demoBtn}><a href={hrefDemo}>view demo</a></div>
+                    <div className={s.demoBtn}><a href={hrefDemo} target={'_blank'}>view demo</a></div>
                 </div>
         </>
     )
