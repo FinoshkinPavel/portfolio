@@ -9,7 +9,7 @@ import axios from "axios";
 
 export const Form = () => {
     const [disable, setDisable] = useState(false)
-    const {open, setOpen} = useContext(Context)
+    const {setOpen} = useContext(Context)
 
     const formik = useFormik({
         initialValues: {
@@ -20,10 +20,8 @@ export const Form = () => {
         validationSchema,
         onSubmit: values => {
             setOpen(true)
-
-            alert(JSON.stringify(values, null, 2));
             setDisable(true)
-            axios.post('http://localhost:3010/sendMessage', {
+            axios.post('https://main--portfoliosmtp.netlify.app/.netlify/functions/api/sendMessage', {
                 name: values.name,
                 email: values.email,
                 message: values.message
@@ -41,7 +39,7 @@ export const Form = () => {
             <div className={s.inputBox}>
                 <input
                     type='email'
-                    placeholder={formik.touched.email && formik.errors.email ? formik.errors.email :'Your Email'}
+                    placeholder={formik.touched.email && formik.errors.email ? formik.errors.email : 'Your Email'}
                     className={s.inputText}
                     id='email'
                     value={formik.values.email}
@@ -62,7 +60,7 @@ export const Form = () => {
             <textarea
                 cols={45}
                 rows={9}
-                placeholder={formik.touched.message && formik.errors.message ? formik.errors.message :'Your Message'}
+                placeholder={formik.touched.message && formik.errors.message ? formik.errors.message : 'Your Message'}
                 className={s.message}
                 name='message'
                 onChange={formik.handleChange}
