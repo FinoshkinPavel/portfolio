@@ -1,14 +1,15 @@
 import todoList from "../../../img/projects/todolist.jpg";
-import counterImg from "../../../img/projects/counterImg.jpg";
+import counterImg from "../../../img/projects/Counters.jpg";
 import socialImg from "../../../img/projects/socialImg.jpg";
 import learnImg from "../../../img/projects/learnImg.jpg";
+import timer from "../../../img/projects/timer.jpg";
 
 export const dataProjects = [
     {
         title: 'TodoList',
         img: todoList,
         description: 'TS, Redux Toolkit, RestAPI, Thunk,Material UI',
-        hrefDemo: 'https://finoshkinpavel.github.io/todo-list/'
+        hrefDemo: 'https://finoshkinpavel.github.io/todo/'
     },
     {
         title: 'Counter',
@@ -27,5 +28,10 @@ export const dataProjects = [
         img: learnImg,
         description: 'App for learning some cards',
         hrefDemo: 'https://finoshkinpavel.github.io/friday/'
+    },{
+        title: 'Timer',
+        img: timer,
+        description: 'Just timer',
+        hrefDemo: 'https://finoshkinpavel.github.io/timer/'
     },
 ]
